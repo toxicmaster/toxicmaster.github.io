@@ -1,43 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>GameLearn</title>
-    <style>
-        body{
-            background-image: url(PW.jpg);
-            background-size: 100% 720px;
-            background-attachment: fixed;
-        }
-        p{
-            color: black;
-            font-weight: bold;
-        }
-    </style>
+	<title>GameLearn</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
 </head>
 <body>
-    <form action="Log In.html"method="POST">
-        <fieldset>
-        <legend><font color="black" font size="20"> Wellcome To GameLearn</font></legend>
-        <p>
-            <legend>Log In</legend>
-        <p>
-			<label>Email :</label>
-            <input type="text" name="email_user" placeholder="Ketik Email Anda"/>
-        </p>
-        <p>
-            <label>Password :</label>
-            <input type="password" name="password_user" placeholder="Ketik Kata Sandi"/>
-        </p>
-        <p>
-        	<input type="submit" name="OK" value="OK"/> <input type="submit" name="Cancel" value="Cancel"/>
-        	<style>
-                body{
-                    width: 500px;
-                    height: 400px;
-                    text-align: center;
-                    border-radius: 4px;
-                    margin: o auto;
-                    }
-            </style>
+	<div id="login-box">
+		<div class="left-box"> 
+			<h1>Sign Up</h1>
+				<input type="text" name="Nama" placeholder="Nama Lengkap"/>
+				<input type="text" name="username" placeholder="Username"/>
+				<input type="text" name="Email" placeholder="E-Mail"/>
+				<input type="password" name="password" placeholder="Password" />
+				<input type="text" name="kota" placeholder="Kota" />
+				<input type="text" name="provinsi" placeholder="Provinsi"/>
+				<input type="submit" name="signup-button" value="Sign Up"/>
+		</div>
+		<div class="right-box">
+			<span class="singinwith">Sign In With <br/>Social Network
+			</span>
+		<button class="social facebook"> Login With Facebook</button>
+		<button class="social discord"> Login With discord</button>
+		<button class="social google"> Login With google</button>
+		</div>
+		<div class="or">OR</div>
+	</div>
 </body>
 </html>
