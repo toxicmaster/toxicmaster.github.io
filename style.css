@@ -1,9 +1,15 @@
+html
+{
+	/*scroll-behavior: smooth;*/
+	overflow-y: hidden; 
+	overflow-x: hidden;
+}
 body
 {
 	margin: 0;
 	padding: 0;
 	background-image: url(Background.jpg);
-	background-position: fixed;
+	background-position: absolute;
 	background-size: 100%;
 	font-size: 16px;
 	font-family: sans-serif;
@@ -189,7 +195,7 @@ button.social
 {
 	position: absolute;
 	width: 600px;
-	height: 300px;
+	height: 200px;
 	margin: 20% 30%;
 	text-align: center;	
 }
@@ -249,6 +255,7 @@ button.social
 }
 input[type="text2"],
 input[type="password2"]
+
 {
 	display: block;
 	box-sizing: border-box;
@@ -265,3 +272,202 @@ input[type="password2"]
 	transition: 0.2s ease;
 	text-align: center;
 }
+.thebox2
+{
+	position: relative;
+	margin: 10% auto;
+	height: 244px;
+	width: 600px;
+	background: #fff;
+	box-shadow: 0 2px 4px rgba(0,0,0,0.6);
+	text-align: center;
+}
+#form-name
+{
+	position: relative;
+	margin: 10% auto;
+	height: 400px;
+	width: 350px;
+	background: #fff;
+	box-shadow: 0 2px 4px rgba(0,0,0,0.6);
+}
+.contact-form
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	box-sizing: border-box;
+	padding: 40px;
+	width: 400px;
+}
+.contact-form h1
+{
+	margin: 0 0 20px 0;
+	font-size: 28px;
+	font-weight: 300;
+	text-align: left;
+	color: #000;	
+}
+input[type="text3"],
+textarea[type="text3"]
+{
+	display: block;
+	box-sizing: border-box;
+	margin-bottom: 20px;
+	padding:4px;
+	width: 200px;
+	height: 18px;
+	border: none;
+	outline: none;
+	border-bottom: 1px solid #aaa;
+	font-family: sans-serif;
+	font-weight: 400;
+	font-size: 15px;
+	transition: 0.2s ease;
+	text-align: center;
+}
+.table1{
+	background-color: rgba(135,206,250);
+	display: grid;
+	border-radius: 5px;
+	height: 500px;
+	min-width: 290px;
+	width: auto;
+	max-width: 60vw;
+	float: left;
+	margin-right: 10px;
+	padding: 5px;
+}
+.table2{
+	background-color: rgba(135,206,250);
+	float: left;
+	display: grid;
+	border-radius: 5px;
+	height: 500px;
+	min-width: 290px;
+	width: 65vw;
+	max-width: 60vw;
+	padding: 5px;
+}
+.isi2{
+	display: block;
+	float: left;
+	background-color: white;
+	height: auto;
+	border-radius: 5px;
+	min-width: 289px;
+	width: 60vw;
+	overflow: scroll;
+}
+.isi1{
+	display: grid;
+	float: left;
+	background-color: white;
+	min-height: 490px; 
+	height: auto;
+	border-radius: 5px;
+	width: auto;
+	overflow: scroll;
+}
+#kontenisijudul{
+	display: grid;
+	background-color: rgba(95,158,160);
+	height: 30px;
+	border-bottom-right-radius: 40px;
+	width: 265px;
+	padding-top: 10px;
+	font-size: 20px;
+	color: white;
+	position: absolute;
+}
+#kontenisi{
+	display: block;
+	background-color: rgba(135,206,250);
+	height: 60px;
+	border-radius: 5px;
+	width: 240px;
+	display: inline-block;
+	padding: 5px;
+	font-size: 15px;
+	float: left;
+	margin-left: 18px;
+	margin-top: 5px;
+}
+#kontenisi2{
+	display: block;
+	background-color: yellow;
+	height: 60px;
+	border-radius: 5px;
+	width: 53vw;
+	display: inline-block;
+	padding: 5px;
+	font-size: 15px;
+	float: left;
+	margin-left: 18px;
+	margin-top: 5px;
+	color: green;
+}
+.kotakmapel{
+	display: grid;
+	height: 300px;
+	width: 550px;
+	background-color: rgba(135,206,250);
+	float: left;
+	margin: 10px;
+	padding: 5px;
+	border-radius: 10px;
+}
+
+{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #F7F9F9;
+}
+
+/*------------------------------------------INI PROFIL------------------------*/
+.groupnews {
+    margin: 0;
+    padding-top: -300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    margin-left: 500px;
+}
+
+.groupnews .news{
+    display: flex;
+    flex-wrap: wrap;
+    float: left;
+}
+
+.groupnews .news .box{
+    position: relative;
+    width: 200px;
+    height: 375px;
+    padding: 20px;
+    background: black;
+    box-shadow: 0 5px 15px rgba(0,0,0,.1);
+    margin: 10px ;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.groupnews .news .box p{
+    text-align: justify;
+}
+
+.groupnews .news .box img {
+    max-width: 100%;
+  
+    border-radius: 250px;
+}
+
+.groupnews .news .box h3, .groupnews .news .box h6, .groupnews .news .box p{
+    padding-bottom: 10px;
+    color: white;
+}
+/*------------------------------------------INI PROFIL------------------------*/
