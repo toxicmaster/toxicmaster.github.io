@@ -10,7 +10,7 @@
 <body>
 	<ul class="nav-area">
 		<li><a href="home-page.html">Home</a></li>
-		<li><a href="#">Academy</a></li>
+		<li><a href="kelas.html">Academy</a></li>
 		<li><a href="guru.html">Teacher</a></li>
 		<li><a href="kontak-kita.html">Contact</a></li>
 		<li><a href="login.html">Sign In</a></li>
@@ -22,63 +22,107 @@
             <div class="box">
                 <img src="dendi1.jpg">
                 <h3>Dendi</h3>
-                <p>Dota2</p>
+                <h2>Dota2</h2>
+                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
             </div>
         </div>
         <div class="news">
             <div class="box">
                 <img src="Notail.jpg">
                 <h3>NOtail</h3>
-                <p>Dota2</p>
+                <h2>Dota2</h2>
+                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
             </div>
         </div>
         <div class="news">
             <div class="box">
-                <img src="miracle.jpg">
+                <img src="miracle2.jpg">
                 <h3>Miracle</h3>
-                <p>Dota2</p></div>
+                <h2>Dota2</h2>
+                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
         	</div>
+        </div>
     	<div class="news">
             <div class="box">
-                <img src="ScreaM.png">
+                <img src="ScreaM.jpg">
                 <h3>ScreaM</h3>
-                <p>CS:GO</p>
+                <h2>CS:GO</h2>
+                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
             </div>
         </div>
         <div class="news">
             <div class="box">
                 <img src="KennyS.jpg">
                 <h3>KennyS</h3>
-                <p>CS:GO</p>
+                <h2>CS:GO</h2>
+                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
             </div>
         </div>
         <div class="news">
             <div class="box">
                 <img src="AndreN.jpg">
                 <h3>AndreN</h3>
-                <p>CS:GO</p>
+                <h2>CS:GO</h2>
+                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
             </div>
         </div>
         <div class="news">
             <div class="box">
                 <img src="Alice.jpg">
                 <h3>Alice</h3>
-                <p>PUBG</p>
+                <h2>PUBG</h2>
+                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
             </div>
         </div>
         <div class="news">
             <div class="box">
-                <img src="srod.jpeg">
+                <img src="srod2.jpg">
                 <h3>Shroud</h3>
-                <p>PUBG</p>
+                <h2>PUBG</h2>
+                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
             </div>
         </div>
         <div class="news">
             <div class="box">
                 <img src="Scoom.jpg">
                 <h3>Scoom</h3>
-                <p>PUBG</p>
+                <h2>PUBG</h2>
+                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
             </div>
-    </div>
+        </div>
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("news");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>    
 </body>
 </html>
